@@ -51,7 +51,7 @@ Cisco Secure Workload (CSW) is a **workload protection platform**. A lightweight
 
 **Console areas:** Investigate (inventory, flows, vulns) · Defend/Segmentation (policy) · Manage (agents) · Platform (connectors) · Administration (audit log)
 
-**Read next:** [Compliance evidence playbook](https://github.com/chandrapati/CSW-Compliance-Mapping/blob/main/docs/compliance-evidence-playbook.md) (full step-by-step) · [About CSW](https://github.com/chandrapati/CSW-Compliance-Mapping/blob/main/docs/about-csw.md) (platform intro)
+**Read next:** [Compliance evidence playbook](https://github.com/chandrapati/CSW-Compliance-Reference-Designs/blob/main/docs/compliance-evidence-playbook.md) (full step-by-step) · [About CSW](https://github.com/chandrapati/CSW-Compliance-Reference-Designs/blob/main/docs/about-csw.md) (platform intro)
 
 ---
 
@@ -112,7 +112,7 @@ Physical access, HR/training records, encryption key management, signed BAAs/ven
 
 ## 1. Overview
 
-FedRAMP authorizes cloud systems using **NIST SP 800-53 Rev 5** controls with **[FedRAMP baselines and parameters](https://www.fedramp.gov)**. This repo already includes [NIST 800-53 Rev 5 runbook coverage](https://github.com/chandrapati/CSW-Compliance-Mapping/blob/main/NIST-800-53/CSW-NIST-800-53-Technical-Runbook.md); this document adds **FedRAMP-specific** emphasis:
+FedRAMP authorizes cloud systems using **NIST SP 800-53 Rev 5** controls with **[FedRAMP baselines and parameters](https://www.fedramp.gov)**. This repo already includes [NIST 800-53 Rev 5 runbook coverage](https://github.com/chandrapati/CSW-Compliance-Reference-Designs/blob/main/NIST-800-53/CSW-NIST-800-53-Technical-Runbook.md); this document adds **FedRAMP-specific** emphasis:
 
 - **Moderate baseline** control expectations commonly evidenced in part by workload telemetry  
 - **Continuous monitoring (ConMon)** rhythm (monthly operational visibility, POA&M hygiene, annual assessments)  
@@ -361,7 +361,7 @@ FedRAMP ConMon emphasizes **ongoing authorization**. Map CSW activities to your 
 - **FedRAMP authorization for CSW itself:** Using CSW does not inherit FedRAMP for the Cisco service; your SSP must state inheritance and responsibilities correctly.
 - **Complete Moderate baseline:** Many controls are **policy, personnel, physical, or IAM-console** tasks outside CSW (e.g., full **AT-*** training records).
 - **Independent scanning tools:** RA-5 often still requires **authenticated scanner** exports; CSW **complements** with exposure context, not wholesale replacement of scanner SOPs.
-- **Encryption validation:** CSW can flag some **cleartext** protocols; **cryptographic module validation** references **FIPS 140** separately ([FIPS runbook](https://github.com/chandrapati/CSW-Compliance-Mapping/blob/main/FIPS-140/CSW-FIPS-Technical-Runbook.md) in this repo).
+- **Encryption validation:** CSW can flag some **cleartext** protocols; **cryptographic module validation** references **FIPS 140** separately ([FIPS runbook](https://github.com/chandrapati/CSW-Compliance-Reference-Designs/blob/main/FIPS-140/CSW-FIPS-Technical-Runbook.md) in this repo).
 - **CSP control inheritance:** Customer Dedicated vs FedRAMP High Lift varies; always reconcile with **FedRAMP Marketplace** authorization for your underlying cloud.
 
 ---
@@ -442,7 +442,7 @@ Schedule **monthly** inventory reconciliation and **quarterly** policy workspace
 
 For control family deep dives (AC, AU, CM, IR, RA, SC, SI), see:
 
-[NIST SP 800-53 Rev 5 Reference Design](https://github.com/chandrapati/CSW-Compliance-Mapping/blob/main/NIST-800-53/CSW-NIST-800-53-Technical-Runbook.md)
+[NIST SP 800-53 Rev 5 Reference Design](https://github.com/chandrapati/CSW-Compliance-Reference-Designs/blob/main/NIST-800-53/CSW-NIST-800-53-Technical-Runbook.md)
 
 Use this FedRAMP document for **ConMon**, **FedRAMP parameters**, **POA&M**, and **3PAO packaging** specifics.
 
@@ -450,9 +450,9 @@ Use this FedRAMP document for **ConMon**, **FedRAMP parameters**, **POA&M**, and
 
 ## Appendix B — Related Frameworks
 
-- [NIST SP 800-207](https://github.com/chandrapati/CSW-Compliance-Mapping/blob/main/NIST-800-207/CSW-NIST-800-207-Technical-Runbook.md) — ZTA alignment for boundary narratives  
-- [CMMC 2.0](https://github.com/chandrapati/CSW-Compliance-Mapping/blob/main/CMMC-2/CSW-CMMC-Technical-Runbook.md) — defense industrial scenarios with similar evidence discipline  
-- [MITRE ATT&CK (Enterprise)](https://github.com/chandrapati/CSW-Compliance-Mapping/blob/main/MITRE-ATTACK/CSW-MITRE-ATTACK-Technical-Runbook.md) — offensive technique coverage mapping for SI-4/IR testing  
+- [NIST SP 800-207](https://github.com/chandrapati/CSW-Compliance-Reference-Designs/blob/main/NIST-800-207/CSW-NIST-800-207-Technical-Runbook.md) — ZTA alignment for boundary narratives  
+- [CMMC 2.0](https://github.com/chandrapati/CSW-Compliance-Reference-Designs/blob/main/CMMC-2/CSW-CMMC-Technical-Runbook.md) — defense industrial scenarios with similar evidence discipline  
+- [MITRE ATT&CK (Enterprise)](https://github.com/chandrapati/CSW-Compliance-Reference-Designs/blob/main/MITRE-ATTACK/CSW-MITRE-ATTACK-Technical-Runbook.md) — offensive technique coverage mapping for SI-4/IR testing  
 
 ---
 
@@ -468,4 +468,4 @@ Use this FedRAMP document for **ConMon**, **FedRAMP parameters**, **POA&M**, and
 
 ---
 
-*Part of the Cisco Secure Workload compliance reference-design series. Umbrella index: [CSW-Compliance-Mapping](https://github.com/chandrapati/CSW-Compliance-Mapping).*
+*Part of the Cisco Secure Workload compliance reference-design series. Umbrella index: [CSW-Compliance-Mapping](https://github.com/chandrapati/CSW-Compliance-Reference-Designs).*
